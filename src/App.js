@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Contact from './components/Contact';
+
+
+const Kevin = {
+  avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX34l5Vy7K3aMXNcl8V7ncTVf8Nwfsic6O9FOkwEYKw4-zwLLh&s',
+  name: 'Kevin Parage',
+  online: true
+}
+const Corinne = {
+  avatar: 'http://www.moving-up.fr/wp-content/uploads/2017/05/corinneleycharles.jpg',
+  name: 'Corrine Russo',
+  online: false
+}
+const Juliette = {
+  avatar: 'https://www.babelio.com/users/AVT_Juliette-Lemaitre_8819.jpg',
+  name: 'Juliette Boyrie',
+  online: true
+}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Contact{...Kevin}/>
+      <Contact{...Corinne}/>
+      <Contact{...Juliette}/>
     </div>
   );
 }
