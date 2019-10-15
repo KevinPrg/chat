@@ -17,7 +17,9 @@ class Contact extends React.Component {
             <span onClick ={event => {const newOnline = !this.state.online;
                 this.setState({ online: newOnline})
             }}className={this.state.online ? "status-online" : "status-offline"}></span>
-            <span className="status-text">{this.state.online ? "online" : "offline"}</span>
+            <span onClick ={event => {const newOnline = !this.state.online;
+                this.setState({ online: newOnline})
+            }} className="status-text">{this.state.online ? "online" : "offline"}</span>
         </div>
     </div>
 )
