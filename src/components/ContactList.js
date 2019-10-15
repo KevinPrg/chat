@@ -31,7 +31,7 @@ const list = [
 
 const ContactLis = () => (
     <div>
-    {list.map(item => (<Contact avatar={item.avatar} name={item.name} online={item.online} />))}
+    { list.map(item => <Contact avatar={item.avatar} name={item.name} online={item.online} />)}
     </div>
 );
 
